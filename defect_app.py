@@ -60,7 +60,7 @@ Act as a structural and civil engineer. Give maximum 3 bullet points per answer.
 # Gemini response function
 def generate_response(prompt, img):
     response = client.models.generate_content(
-        model="gemini-1.0-pro-vision",
+        model="gemini-2.5-flash",
         contents=[prompt, img]
     )
     return response.text
